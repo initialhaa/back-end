@@ -5,7 +5,14 @@ import { CobaController } from './controller/coba.controller';
 import { CobaService } from './service/coba.service';
 
 @Module({
-  imports: [],
+  imports: [ 
+  //   ServeStaticModule.forRoot({
+  //   rootPath: join(__dirname, '..', 'public'),
+  //   exclude: ['/api*', '/file*'],
+  // }),
+  // PrismaModule,
+  // HttpModule,
+],
   controllers: [AppController, CobaController],
   providers: [AppService, CobaService],
 })
